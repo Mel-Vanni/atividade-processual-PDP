@@ -1,2 +1,2 @@
-# atividade-processual-PDP
+# Atividade-Processual-PDP
 Este trabalho descreve a implementação de um sistema distribuído de mineração computacional baseado em MQTT com broker Mosquitto rodando no WSL na porta 1883, formado por nós que podem atuar como controlador, responsável por gerar desafios, validar soluções e publicar resultados, ou minerador, que recebe desafios e busca soluções por prova de trabalho. A coordenação entre os nós ocorre por tópicos dedicados sd/init, sd/voting, sd/coordinator, sd/challenge, sd/solution e sd/result, com protocolo de descoberta de participantes, eleição de líder adaptada do algoritmo Bully e mineração paralela usando ThreadPoolExecutor que valida soluções por SHA‑1.
